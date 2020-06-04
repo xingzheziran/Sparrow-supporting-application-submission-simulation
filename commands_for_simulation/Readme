@@ -1,0 +1,20 @@
+
+Application submission on Sparrow.
+(1)
+Files (including bash scripts, config_file) in directory slave shoud be copied to the same directory as sparrow-1.0-SNAPSHOT.jar ( the compiled Sparrow), e.g. ~/sparrow.
+
+Files in master directory are deployed in the same way.
+(2)
+Files in apps subdirectory of master and slave are the configuration files of simulated applications.
+E.g. app-0 in apps is used to initialize the corresponding backend and frontend of application 0 at slave side and master side respectively. 
+(3)
+Note the config_file name of each simulated application must following the style of app-i. 
+
+To run the simuation, 
+1) deploy Sparrow on your cluster (See directory deploy for the compilation ), and start it.
+
+2) put the files as mentioned above to each nodes.
+3) Start the backends
+./simulate_Spark_backends.sh
+4)Start the frontends
+./simulate_Spark_frontends.sh

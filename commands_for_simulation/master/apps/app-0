@@ -1,0 +1,6 @@
+app_id = app-0
+listen_port = 20102
+
+experiment_ms = 8 
+scheduler_host = 172.16.0.107
+
